@@ -173,6 +173,7 @@ int BinTreeNode_TravLev(BinTreeNode node, Function func) {
 		}
 		func(&curr->data);
 	}
+	queue_destroy(&queue);
 	return 0;
 }
 
